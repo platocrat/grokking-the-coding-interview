@@ -2,6 +2,7 @@ function findAvgsOfSubarrays(K , arr) {
   const avgs = []
   let windowSum = 0.0, windowStart = 0
 
+  // Go through entire length of array once to save time!
   for (let windowEnd = 0; windowEnd < arr.length; windowEnd++) {
     windowSum += arr[windowEnd] // add the next element
     /**
